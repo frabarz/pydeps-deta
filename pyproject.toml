@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pydeps-deta"
-version = "0.1.0"
+version = "0.1.1"
 description = "A rewrite of the pydeps project, using FastAPI, for deployment on Deta."
 authors = ["Francisco Abarzua <python.dev@frabarz.cl>"]
 license = "MIT"
