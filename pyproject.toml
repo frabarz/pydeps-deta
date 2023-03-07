@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pydeps-deta"
+version = "0.1.0"
+description = "A rewrite of the pydeps project, using FastAPI, for deployment on Deta."
+authors = ["Francisco Abarzua <python.dev@frabarz.cl>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+cmp-version = "^3.0.0"
+deta = "^1.1.0"
+fastapi = "^0.92.0"
+httpx = {extras = ["http2"], version = "^0.23.3"}
+
+[tool.poetry.group.dev.dependencies]
+uvicorn = "^0.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
