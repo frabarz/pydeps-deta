@@ -7,6 +7,11 @@ This project enables a set of endpoints to get dependency information of python 
 The deployed version of this repository is available at https://pydeps.frbrz.xyz/  
 You can use its [OpenAPI documentation](https://pydeps.frbrz.xyz/openapi.json) to [explore the available endpoints](https://pydeps.frbrz.xyz/docs).
 
+## Own instance on Deta
+
+Although the app is available at Deta Discovery, it is not intended for the creation of multiple instances. The preferred way is using [the referenced live instance](https://pydeps.frbrz.xyz/query/) in pyflow, so more versions get cached and are readily available for other users.  
+However dependencies are a delicate issue and you would do right in not trusting so easily third parties servers. You can still create your own instance, by [installing it on the Canvas](https://deta.space/discovery/r/rxyxftxvhwf4jhtk), or by cloning this repo and pushing a new private project. Or you could even just run it locally.
+
 ## Run locally
 
 This project uses Deta Base to cache the results of each query for dependencies. To enable cache, you must provide the application with a Deta Project Key, and set it in the environment variable `DETA_PROJECT_KEY`.  
